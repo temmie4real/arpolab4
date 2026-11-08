@@ -32,6 +32,7 @@ public class PlayerHealthTests
         health.Decrement();
         health.Decrement();
         Assert.IsFalse(health.IsAlive, "Ошибка: логика нанесения урона работает некорректно!");
+        Assert.AreEqual(1, 2, "ВРЕМЕННО: намеренно сломанный тест для демонстрации защиты пайплайна (ЛР №4, шаг 5.3)");
 
         // Удаляем объект после теста, чтобы очистить память
         Object.Destroy(playerObj);
